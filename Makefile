@@ -4,4 +4,6 @@ sum_test : 2.o 3.o
 	g++ -c -o 2.o 2.cpp
 3.o : 3.cpp
 	g++ -c -o 3.o 3.cpp
-
+clean:
+	rm -f *.o
+	rm -f sum_test
